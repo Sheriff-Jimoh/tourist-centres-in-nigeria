@@ -1,5 +1,5 @@
 # This is the web application of tourist centres in Nigeria
-Created in APril 2021 as a Web Cartography Semester Project during the Copernicus Master in Digital Earth Programme at the Palacky University Olomouc, Czech Republic.
+Created in April 2021 as a Web Cartography Semester Project during the Copernicus Master in Digital Earth Programme at the Palacky University Olomouc, Czech Republic.
 
 <p align="center">
   <img src="./leaflet-storymaps-demo.gif" title="Storymaps demo" width="100%" />
