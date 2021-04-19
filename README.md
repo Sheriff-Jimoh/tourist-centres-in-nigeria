@@ -9,4 +9,4 @@ This is the repository for the web cartography semester project: Tourist centres
 </p>
 
 
-For more information email me at [Jimoh Sheriff Oluwagbenga](sherobranding@gmail.com).
+For more information email me at sherobranding@gmail.com.
