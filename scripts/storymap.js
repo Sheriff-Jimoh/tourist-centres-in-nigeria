@@ -469,7 +469,7 @@ $(window).on('load', function() {
    */
   function changeAttribution() {
     var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
-    var credit1 = 'WebMap <a href="'
+    //var credit1 = 'WebMap <a href="'
     var credit = 'Code <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
       //+ (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
@@ -480,11 +480,11 @@ $(window).on('load', function() {
 
     if (name && url) {
       if (url.indexOf('@') > 0) { url = 'mailto:' + url; }
-      credit1 += ' by <a href="' + url + '">' + name + '</a> | ';
+      credit += ' by <a href="' + url + '">' + name + '</a> | ';
     } else if (name) {
-      credit1 += ' by ' + name + ' | ';
+      credit += ' by ' + name + ' | ';
     } else {
-      credit1 += ' | ';
+      credit += ' | ';
     }
    
     credit += 'Code <a href="' + getSetting('_githubRepo') + '">credit</a>';
