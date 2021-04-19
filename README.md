@@ -1,4 +1,4 @@
-# [Tourist centres in Nigeria web application]
+# [Tourist centres in Nigeria web application](https://sheriff-jimoh.github.io/tourist-centres-in-nigeria/)
 
 This is the repository for the web cartography semester project: Tourist centres in Nigeria by Jimoh Sheriff Oluwagbenga in the Department of Geoinformatics at Palacky University Olomouc, Czech Republic. This map was built using Hands-On Data Visualization Leaflet Story Maps with Google Sheets by Ilya Ilyankou and Jack Dougherty at Trinity College, CT and the code was adapted by me.
 
