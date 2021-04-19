@@ -1,16 +1,13 @@
-# This is the web application of tourist centres in Nigeria
-Created in April 2021 as a Web Cartography Semester Project during the Copernicus Master in Digital Earth Programme at the Palacky University Olomouc, Czech Republic.
+# Tourist centres in Nigeria web application
+# created in April 2021 as a Web Cartography Semester Project during the Copernicus Master in Digital Earth Programme at the Palacky University Olomouc, Czech Republic.
 
-<p align="center">
-  <img src="./leaflet-storymaps-demo.gif" title="Storymaps demo" width="100%" />
-</p>
+//<p align="center">
+  //<img src="./leaflet-storymaps-demo.gif" title="Storymaps demo" width="100%" />
+//</p>
 
 ## Live links (replace with your own)
 - Leaflet Map https://sheriff-jimoh.github.io/tourist-centres-in-nigeria/
 - Google Sheets template https://docs.google.com/spreadsheets/d/1jpGOvogeOIwgGMcQQmp9gYdCAwdaG5_30mM7Xaxzrmw/edit#gid=0
-
-## Create Your Own
-- See step-by-step tutorial in *Hands-On Data Visualization* https://HandsOnDataViz.org/leaflet-storymaps-with-google-sheets.html
 
 #### Geocode your address data with Google Sheets add-on
 To geocode (find latitude and longitude coordinates), we recommend installing the free [Geocoding by SmartMonkey add-on for Google Sheets](https://gsuite.google.com/marketplace/app/geocoding_by_smartmonkey/1033231575312). Insert your addresses in place of the samples in the Geocoding Details tab, then use Add-Ons > Geocoding > Geocode Details menu. Learn more in *Hands-On Data Visualization* https://handsondataviz.org/geocode.html
