@@ -1,5 +1,6 @@
 # Tourist centres in Nigeria web application
-created in April 2021 as a Web Cartography Semester Project during the Copernicus Master in Digital Earth Programme at the Palacky University Olomouc, Czech Republic.
+
+This is the repository for the web cartography semester project: Tourist centres in Nigeria by Jimoh Sheriff Oluwagbenga in the Department of Geoinformatics at Palacky University Olomouc, Czech Republic. This map was built using Hands-On Data Visualization Leaflet Story Maps with Google Sheets by Ilya Ilyankou and Jack Dougherty at Trinity College, CT and the code was adapted by me.
 
 <p align="center">
   <img src="./leaflet-storymaps-demo.gif" title="Tourist Centres in Nigeria" width="100%" />
