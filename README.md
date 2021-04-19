@@ -1,9 +1,9 @@
 # Tourist centres in Nigeria web application
-# created in April 2021 as a Web Cartography Semester Project during the Copernicus Master in Digital Earth Programme at the Palacky University Olomouc, Czech Republic.
+created in April 2021 as a Web Cartography Semester Project during the Copernicus Master in Digital Earth Programme at the Palacky University Olomouc, Czech Republic.
 
-//<p align="center">
-  //<img src="./leaflet-storymaps-demo.gif" title="Storymaps demo" width="100%" />
-//</p>
+<p align="center">
+  <img src="./leaflet-storymaps-demo.gif" title="Tourist Centres in Nigeria" width="100%" />
+</p>
 
 ## Live links (replace with your own)
 - Leaflet Map https://sheriff-jimoh.github.io/tourist-centres-in-nigeria/
