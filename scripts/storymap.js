@@ -218,8 +218,8 @@ $(window).on('load', function() {
         'mp3': 'audio',
         'ogg': 'audio',
         'wav': 'audio',
-        //'mp4': 'audio',
-        //'web3': 'audio',
+        'mp4': 'audio',
+        'web3': 'audio',
       }
 
       var mediaExt = c['Media Link'] ? c['Media Link'].split('.').pop().toLowerCase() : '';
@@ -469,28 +469,35 @@ $(window).on('load', function() {
   /**
    * Changes map attribution (author, GitHub repo, email etc.) in bottom-right
    */
-function changeAttribution() {
+  function changeAttribution() {
     var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
-    //var credit1 = 'WebMap <a href="'
-    var credit = 'Code <a href="'
+    var credit = 'Map <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
-      //+ (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
-      + '" target="_blank">created</a>';
+      + (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
+      + '" target="_blank">data</a> and photos by';
 
     var name = getSetting('_authorName');
+    var web = getSetting('_webDeveloper')
     var url = getSetting('_authorURL');
+    var weburl = getSetting('_webDeveloperURL');
 
     if (name && url) {
       if (url.indexOf('@') > 0) { url = 'mailto:' + url; }
-      credit += ' by <a href="' + url + '">' + name + '</a> | ';
+      credit += ' <a href="' + url + '">' + name + '</a> | ';
     } else if (name) {
       credit += ' by ' + name + ' | ';
     } else {
       credit += ' | ';
     }
-   
-    credit += 'Code <a href="' + getSetting('_githubRepo') + '">credit</a>';
-    if (getSetting('_codeCredit')) credit += ' by ' + getSetting('_codeCredit');
+
+    if (getSetting('projectWebsite')) credit += ' Project website: ' + getSetting('projectWebsite') + ' | ';
+    if (getSetting('_githubRepo')) credit += ' GitHub Repo: ' + getSetting('_githubRepo') + ' | ';
+    //if (getSetting('_webDeveloper')) credit += 'Digital Project Support by: ' + getSetting('_webDeveloper') + ' | ';
+    if ( web && weburl) {
+      if (weburl.indexOf('@') > 0) { url = 'mailto:' + weburl; }
+      credit += ' Digital Project Support by: <a href="' + weburl + '">' + web + ' | ' + '</a>';
+    };
+    if (getSetting('_codeCredit')) credit += 'Original Code by ' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
   }
