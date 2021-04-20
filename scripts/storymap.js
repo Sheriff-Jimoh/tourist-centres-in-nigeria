@@ -493,9 +493,9 @@ $(window).on('load', function() {
     if (getSetting('projectWebsite')) credit += ' Project website: ' + getSetting('projectWebsite') + ' | ';
     if (getSetting('_githubRepo')) credit += ' GitHub Repo: ' + getSetting('_githubRepo') + ' | ';
     //if (getSetting('_webDeveloper')) credit += 'Digital Project Support by: ' + getSetting('_webDeveloper') + ' | ';
-    if ( web && weburl) {
-      if (weburl.indexOf('@') > 0) { url = 'mailto:' + weburl; }
-      credit += ' Digital Project Support by: <a href="' + weburl + '">' + web + ' | ' + '</a>';
+    //if ( web && weburl) {
+      //if (weburl.indexOf('@') > 0) { url = 'mailto:' + weburl; }
+      //credit += ' Web Cartography Course: <a href="' + weburl + '">' + web + ' | ' + '</a>';
     };
     if (getSetting('_codeCredit')) credit += 'Original Code by ' + getSetting('_codeCredit');
     credit += ' with ';
