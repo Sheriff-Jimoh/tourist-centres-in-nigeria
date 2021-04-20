@@ -471,10 +471,10 @@ $(window).on('load', function() {
    */
   function changeAttribution() {
     var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
-    var credit = 'Map application created by <a href="'
+    var credit = 'Map <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
-      //+ (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
-    //+ '" target="_blank"></a> Application created by';
+      + (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
+      + '" target="_blank"></a> created by';
 
     var name = getSetting('_authorName');
     var web = getSetting('_webDeveloper')
