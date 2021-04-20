@@ -5,7 +5,7 @@ This is the repository for the web cartography semester project: Tourist centres
 ## License
 
 <p align="center">
-  <img src="./Tourist centres.PNG" title="Tourist Centres in Nigeria" width="100%" />
+  <img src="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria/blob/main/media/Tourist%20map.PNG" title="Tourist Centres in Nigeria" width="100%" />
 </p>
 
 
