@@ -489,7 +489,6 @@ $(window).on('load', function() {
     }
    
     credit += 'Map <a href="' + getSetting('_githubRepo') + '">credit</a>';
-    };
     if (getSetting('_codeCredit')) 'Original Code by' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
