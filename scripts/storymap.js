@@ -491,7 +491,7 @@ $(window).on('load', function() {
     }
    
     credit += 'WebMap <a href="' + getSetting('_githubRepo') + '">credit</a>';
-    if (getSetting('_codeCredit'))  credit += ' Code by ' + getSetting('_codeCredit');
+    if (getSetting('_codeCredit'))  credit += ' by ' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
   }
