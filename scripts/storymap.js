@@ -88,7 +88,7 @@ $(window).on('load', function() {
       maxZoom: 18
     }).addTo(map);
   }
-  L.control.layers(basemap).addTo(map);
+  //L.control.layers(basemap).addTo(map);
   function initMap(options, chapters) {
     createDocumentSettings(options);
 
