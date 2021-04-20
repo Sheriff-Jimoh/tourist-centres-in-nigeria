@@ -479,18 +479,18 @@ $(window).on('load', function() {
     var name = getSetting('_authorName');
     var web = getSetting('_webDeveloper')
     var url = getSetting('_authorURL');
-    //var weburl = getSetting('_webDeveloperURL');
+    var weburl = getSetting('_webDeveloperURL');
 
     if (name && url) {
       if (url.indexOf('@') > 0) { url = 'mailto:' + url; }
       credit += ' Map <a href="' + url + '">' + name + '</a> | ';
-    } else if (name) {
-      credit += ' by ' + name + ' | ';
-    } else {
-      credit += ' | ';
-    }
+    //} else if (name) {
+      //credit += ' by ' + name + ' | ';
+    //} else {
+     // credit += ' | ';
+    //}
 
-    //if (getSetting('projectWebsite')) credit += ' Project website: ' + getSetting('projectWebsite') + ' | ';
+    if (getSetting('projectWebsite')) credit += ' Project website: ' + getSetting('projectWebsite') + ' | ';
     if (getSetting('_githubRepo')) credit += ' GitHub Repo: ' + getSetting('_githubRepo') + ' | ';
     //if (getSetting('_webDeveloper')) credit += 'Digital Project Support by: ' + getSetting('_webDeveloper') + ' | ';
     //if ( web && weburl) {
