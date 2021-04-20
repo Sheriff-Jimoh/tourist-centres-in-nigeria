@@ -469,18 +469,17 @@ $(window).on('load', function() {
   /**
    * Changes map attribution (author, GitHub repo, email etc.) in bottom-right
    */
-  function changeAttribution() {
+function changeAttribution() {
     var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
     //var credit1 = 'WebMap <a href="'
-    var credit = 'WebMap <a href="'
+    var credit = 'Code <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
       //+ (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
       + '" target="_blank">created</a>';
 
     var name = getSetting('_authorName');
-    //var web = getSetting('_webDeveloper');
     var url = getSetting('_authorURL');
-    //var webURL = getSetting('_webDeveloperURL');
+
     if (name && url) {
       if (url.indexOf('@') > 0) { url = 'mailto:' + url; }
       credit += ' by <a href="' + url + '">' + name + '</a> | ';
@@ -490,8 +489,8 @@ $(window).on('load', function() {
       credit += ' | ';
     }
    
-    credit += 'WebMap <a href="' + getSetting('_githubRepo') + '">credit</a>';
-    if (getSetting('_codeCredit'))  credit += ' by ' + getSetting('_codeCredit');
+    credit += 'Code <a href="' + getSetting('_githubRepo') + '">credit</a>';
+    if (getSetting('_codeCredit')) credit += ' by ' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
   }
