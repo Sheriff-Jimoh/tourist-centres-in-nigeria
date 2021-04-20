@@ -218,8 +218,8 @@ $(window).on('load', function() {
         'mp3': 'audio',
         'ogg': 'audio',
         'wav': 'audio',
-        'mp4': 'audio',
-        'web3': 'audio',
+        //'mp4': 'audio',
+        //'web3': 'audio',
       }
 
       var mediaExt = c['Media Link'] ? c['Media Link'].split('.').pop().toLowerCase() : '';
