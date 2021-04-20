@@ -474,7 +474,7 @@ $(window).on('load', function() {
     var credit = 'Map <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
       //+ (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
-     + '" target="_blank"></a> Application created by';
+    //+ '" target="_blank"></a> Application created by';
 
     var name = getSetting('_authorName');
     var web = getSetting('_webDeveloper')
@@ -483,7 +483,7 @@ $(window).on('load', function() {
 
     if (name && url) {
       if (url.indexOf('@') > 0) { url = 'mailto:' + url; }
-      credit += ' <a href="' + url + '">' + name + '</a> | ';
+      credit += ' Map Application created by <a href="' + url + '">' + name + '</a> | ';
     } else if (name) {
       credit += ' by ' + name + ' | ';
     } else {
