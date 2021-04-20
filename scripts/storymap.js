@@ -218,6 +218,8 @@ $(window).on('load', function() {
         'mp3': 'audio',
         'ogg': 'audio',
         'wav': 'audio',
+        'mp4': 'audio',
+        'web3': 'audio',
       }
 
       var mediaExt = c['Media Link'] ? c['Media Link'].split('.').pop().toLowerCase() : '';
@@ -476,9 +478,9 @@ $(window).on('load', function() {
       + '" target="_blank">created</a>';
 
     var name = getSetting('_authorName');
-    var web = getSetting('_webDeveloper');
+    //var web = getSetting('_webDeveloper');
     var url = getSetting('_authorURL');
-    var webURL = getSetting('_webDeveloperURL');
+    //var webURL = getSetting('_webDeveloperURL');
     if (name && url) {
       if (url.indexOf('@') > 0) { url = 'mailto:' + url; }
       credit += ' by <a href="' + url + '">' + name + '</a> | ';
