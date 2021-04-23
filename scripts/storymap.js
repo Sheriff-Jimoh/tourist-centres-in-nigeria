@@ -46,10 +46,6 @@ $(window).on('load', function() {
 
   })
 
-//minimap
-var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 22,
-});
   /**
   * Reformulates documentSettings as a dictionary, e.g.
   * {"webpageTitle": "Leaflet Boilerplate", "infoPopupText": "Stuff"}
