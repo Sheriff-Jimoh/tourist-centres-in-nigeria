@@ -46,8 +46,10 @@ $(window).on('load', function() {
 
   })
 
-
-
+//minimap
+var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 22,
+});
   /**
   * Reformulates documentSettings as a dictionary, e.g.
   * {"webpageTitle": "Leaflet Boilerplate", "infoPopupText": "Stuff"}
@@ -90,7 +92,7 @@ $(window).on('load', function() {
   }
   
     //Changing the map control zoom position
-  map.zoomControl.setPosition("topright");
+   //map.zoomControl.setPosition("topright");
   
       //Add Scale
     L.control.scale({position: "bottomright"}).addTo(map)
@@ -472,7 +474,8 @@ $(window).on('load', function() {
 
   }
 
-
+ //the minimap tool
+ 	var miniMap = new L.Control.MiniMap(OpenStreetMap_Mapnik1, { toggleDisplay: true, position: 'bottomleft' }).addTo(map);
   /**
    * Changes map attribution (author, GitHub repo, email etc.) in bottom-right
    */
