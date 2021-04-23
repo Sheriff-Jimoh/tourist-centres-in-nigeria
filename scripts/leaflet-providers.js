@@ -11,7 +11,11 @@
 	}
 }(this, function (L) {
 	'use strict';
-
+//minimap
+	var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 22,
+	});
+	
 	L.TileLayer.Provider = L.TileLayer.extend({
 		initialize: function (arg, options) {
 			var providers = L.TileLayer.Provider.providers;
