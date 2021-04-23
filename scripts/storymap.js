@@ -88,6 +88,13 @@ $(window).on('load', function() {
       maxZoom: 21
     }).addTo(map);
   }
+  
+    //Changing the map control zoom position
+  map.zoomControl.setPosition("topright");
+  
+      //Add Scale
+    L.control.scale({position: "bottomright"}).addTo(map)
+  
   //L.control.layers(basemap).addTo(map);
   function initMap(options, chapters) {
     createDocumentSettings(options);
