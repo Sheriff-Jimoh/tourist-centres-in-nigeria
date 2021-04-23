@@ -497,7 +497,7 @@ $(window).on('load', function() {
       if (weburl.indexOf('@') > 0) { url = 'mailto:' + weburl; }
       credit += ' Web Cartography Course: <a href="' + weburl + '">' + web + ' | ' + '</a>';
     };
-    if (getSetting('_codeCredit')) credit += 'Original Code by ' + getSetting('_codeCredit');
+    if (getSetting('_codeCredit')) credit += 'Credit: ' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
   }
