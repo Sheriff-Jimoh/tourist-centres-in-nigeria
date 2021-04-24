@@ -88,7 +88,7 @@ $(window).on('load', function() {
   }
   
     //Changing the map control zoom position
-   //map.zoomControl.setPosition("topright");
+   map.zoomControl.setPosition("topright");
   
       //Add Scale
     L.control.scale({position: "bottomright"}).addTo(map)
