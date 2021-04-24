@@ -470,8 +470,6 @@ $(window).on('load', function() {
 
   }
 
- //the minimap tool
- 	var miniMap = new L.Control.MiniMap(OpenStreetMap_Mapnik1, { toggleDisplay: true, position: 'bottomright' }).addTo(map);
   /**
    * Changes map attribution (author, GitHub repo, email etc.) in bottom-right
    */
