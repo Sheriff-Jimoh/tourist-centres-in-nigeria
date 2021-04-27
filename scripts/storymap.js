@@ -475,10 +475,10 @@ $(window).on('load', function() {
    */
   function changeAttribution() {
     var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
-    var credit = 'Map <a href="'
+    var credit = 'WebMap <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
       + (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
-      + '" target="_blank"></a> application created by';
+      + '" target="_blank"></a> created by';
 
     var name = getSetting('_authorName');
     var web = getSetting('_webDeveloper')
