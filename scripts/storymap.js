@@ -91,7 +91,7 @@ $(window).on('load', function() {
    map.zoomControl.setPosition("topright");
   
       //Add Scale
-    L.control.scale({position: "bottomright"}).addTo(map)
+    L.control.scale({position: "bottomleft"}).addTo(map)
 	
   var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
