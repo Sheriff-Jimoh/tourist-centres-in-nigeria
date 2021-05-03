@@ -114,7 +114,9 @@ $(window).on('load', function() {
 
     // Load tiles
     addBaseMap();
-
+	//the minimap tool
+ 	var miniMap = new L.Control.MiniMap(OpenStreetMap_Mapnik1, { toggleDisplay: true, position: 'bottomright' }).addTo(map);
+    
     // Add zoom controls if needed
     //if (getSetting('_zoomControls') !== 'off') {
       //L.control.zoom({
