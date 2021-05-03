@@ -478,7 +478,7 @@ $(window).on('load', function() {
     var credit = 'WebMap <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
       + (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
-      + '" target="_blank"></a> created by';
+      + '" target="_blank"></a> created';
 
     var name = getSetting('_authorName');
     var web = getSetting('_webDeveloper')
