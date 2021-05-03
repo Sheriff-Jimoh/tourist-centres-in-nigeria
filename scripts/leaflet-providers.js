@@ -640,8 +640,6 @@
 			}
 		}
 	};
-	//the minimap tool
- 	var miniMap = new L.Control.MiniMap(OpenStreetMap_Mapnik1, { toggleDisplay: true, position: 'bottomright' }).addTo(map);
 	
 	L.tileLayer.provider = function (provider, options) {
 		return new L.TileLayer.Provider(provider, options);
