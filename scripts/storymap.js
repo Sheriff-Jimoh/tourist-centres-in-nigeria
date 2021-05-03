@@ -453,7 +453,10 @@ $(window).on('load', function() {
         scrollTop: $('#container' + containerId).offset().top
       }, 2000);
     }
-
+	
+    //the minimap tool
+  	var miniMap = new L.Control.MiniMap(OpenStreetMap_Mapnik1, { toggleDisplay: true, position: 'bottomright' }).addTo(map);
+    
     // Add Google Analytics if the ID exists
     var ga = getSetting('_googleAnalytics');
     if ( ga && ga.length >= 10 ) {
