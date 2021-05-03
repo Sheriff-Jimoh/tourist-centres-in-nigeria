@@ -11,10 +11,6 @@
 	}
 }(this, function (L) {
 	'use strict';
-//minimap
-	var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 22,
-	});
 	
 	L.TileLayer.Provider = L.TileLayer.extend({
 		initialize: function (arg, options) {
@@ -101,7 +97,11 @@
 	 * Definition of providers.
 	 * see http://leafletjs.com/reference.html#tilelayer for options in the options map.
 	 */
-
+	//minimap
+	var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 22,
+	});
+	
 	L.TileLayer.Provider.providers = {
 		OpenStreetMap: {
 			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
