@@ -529,7 +529,7 @@ var ctrlPan = L.control.pan().addTo(map);
    * Changes map attribution (author, GitHub repo, email etc.) in bottom-right
    */
   function changeAttribution() {
-    //var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
+    var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
     var credit = 'WebMap <a href="'
       // Show Google Sheet URL if the variable exists and is not empty, otherwise link to Chapters.csv
       + (typeof googleDocURL !== 'undefined' && googleDocURL ? googleDocURL : './csv/Chapters.csv')
