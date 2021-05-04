@@ -80,12 +80,12 @@ $(window).on('load', function() {
   /**
    * Loads the basemap and adds it to the map
    */
-  //function addBaseMap() {
-    //var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
-    //L.tileLayer.provider(basemap, {
-      //maxZoom: 21
-    //}).addTo(map);
-  //}
+  function addBaseMap() {
+    var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
+    L.tileLayer.provider(basemap, {
+      maxZoom: 21
+    }).addTo(map);
+  }
   
     //Changing the map control zoom position
    map.zoomControl.setPosition("topright");
@@ -164,7 +164,7 @@ var ctrlPan = L.control.pan().addTo(map);
     }
 
     // Load tiles
-    //addBaseMap();
+    addBaseMap();
     
     // Add zoom controls if needed
     //if (getSetting('_zoomControls') !== 'off') {
