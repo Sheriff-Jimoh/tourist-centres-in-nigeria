@@ -134,7 +134,7 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 		
 		
 	var baseLayers = {
-	//"Open Street Map1" : basemap,
+	"Open Street Map1" : basemap,
 	"Esri World Street Map": Esri_WorldStreetMap,
 	"Esri World Imagery": Esri_WorldImagery,
         "Grayscale Map": grayscale,
