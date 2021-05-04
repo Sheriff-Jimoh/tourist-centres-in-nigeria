@@ -164,7 +164,7 @@ var ctrlPan = L.control.pan().addTo(map);
     }
 
     // Load tiles
-    addBaseMap();
+    //addBaseMap();
     
     // Add zoom controls if needed
     //if (getSetting('_zoomControls') !== 'off') {
