@@ -80,12 +80,12 @@ $(window).on('load', function() {
   /**
    * Loads the basemap and adds it to the map
    */
-  //function addBaseMap() {
-    //var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
-   // L.tileLayer.provider(basemap, {
-     // maxZoom: 21
-   // }).addTo(map);
-  //}
+  function addBaseMap() {
+    var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
+   L.tileLayer.provider(basemap, {
+     maxZoom: 21
+   }).addTo(map);
+   }
   
     //Changing the map control zoom position
    map.zoomControl.setPosition("topright");
@@ -125,15 +125,16 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	maxZoom: 22,
 });
 	    // centering of the map
-	var map = L.map('map', {
-		center: [8.86, 8.52],
-		zoom: 13,
-		layers: [Esri_WorldImagery],
-        fullscreenControl: {
-        pseudoFullscreen: false
+	//var map = L.map('map', {
+	//	center: [8.86, 8.52],
+	//	zoom: 13,
+	//	layers: [Esri_WorldImagery],
+        //fullscreenControl: {
+        //pseudoFullscreen: false
 		
 		
 	var baseLayers = {
+	"Open Street Map1" : basemap,
 	"Esri World Street Map": Esri_WorldStreetMap,
 	"Esri World Imagery": Esri_WorldImagery,
         "Grayscale Map": grayscale,
