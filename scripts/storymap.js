@@ -144,7 +144,11 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	};	
 	   
 L.control.layers(baseLayers).addTo(map);
+	
 var ctrlPan = L.control.pan().addTo(map);
+	
+ var ctrlzoomslider = L.control.zoomslider ({position: 'topright'}).addTo(map);
+	
   //L.control.layers(basemap).addTo(map);
   function initMap(options, chapters) {
     createDocumentSettings(options);
