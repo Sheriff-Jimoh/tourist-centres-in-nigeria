@@ -125,12 +125,12 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	maxZoom: 22,
 });
 	    // centering of the map
-	var map = L.map('map', {
-		center: [8.86, 8.52],
-		zoom: 13,
-		layers: [Esri_WorldImagery1],
-        fullscreenControl: {
-        pseudoFullscreen: false
+	//var map = L.map('map', {
+		//center: [8.86, 8.52],
+		//zoom: 13,
+		//layers: [Esri_WorldImagery],
+        //fullscreenControl: {
+        //pseudoFullscreen: false
 		
 		
 	var baseLayers = {
