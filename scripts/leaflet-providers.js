@@ -98,9 +98,9 @@
 	 * see http://leafletjs.com/reference.html#tilelayer for options in the options map.
 	 */
 	
-	var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 22,
-	});
+	//var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	//maxZoom: 22,
+	//});
 	
 	L.TileLayer.Provider.providers = {
 		OpenStreetMap: {
