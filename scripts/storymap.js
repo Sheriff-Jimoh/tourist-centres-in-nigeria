@@ -93,30 +93,30 @@ $(window).on('load', function() {
       //Add Scale
     L.control.scale({position: "bottomright"}).addTo(map)
 	
-  var Esri_WorldStreetMap1 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
 	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz |Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ,, TomTom, 2012'
 	});
 
-var Esri_WorldImagery1 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
 	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | Tiles &copy; Esri &mdash; Source: Esri and the GIS User Community'
 	});
 
-var mbAttr1 = 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+var mbAttr = 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 	mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
 
-var grayscale1   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', maxZoom:22, attribution: mbAttr}),
+var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', maxZoom:22, attribution: mbAttr}),
 	streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
-    var OpenTopoMap1 = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+    var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 22,
 	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 	});
 	
-var OpenStreetMap_Mapnik11 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 22,
 	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
@@ -134,12 +134,12 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 		
 		
 	var baseLayers = {
-	"Esri World Street Map": Esri_WorldStreetMap1,
-	"Esri World Imagery": Esri_WorldImagery1,
-        "Grayscale Map": grayscale1,
-	"Open Street Map" : OpenStreetMap_Mapnik11,
-	"Open Topo Map": OpenTopoMap1,
-	"Street Map": streets1
+	"Esri World Street Map": Esri_WorldStreetMap,
+	"Esri World Imagery": Esri_WorldImagery,
+        "Grayscale Map": grayscale,
+	"Open Street Map" : OpenStreetMap_Mapnik,
+	"Open Topo Map": OpenTopoMap,
+	"Street Map": streets
 	};	
 	   
 L.control.layers(baseLayers).addTo(map);
