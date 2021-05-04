@@ -95,12 +95,12 @@ $(window).on('load', function() {
 	
 var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
-	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz |Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ,, TomTom, 2012'
+	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | <a Github Repo: href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a>| Credit: <a href="HandsonDataViz">HandsonDataViz<a/> | Tiles &copy; Esri, 2012'
 	});
 
 var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
-	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | Tiles &copy; Esri &mdash; Source: Esri and the GIS User Community'
+	attribution: '| Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | Tiles &copy; Esri'
 	});
 
 var mbAttr = 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
@@ -113,7 +113,7 @@ var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', maxZoom:22, attribu
 
     var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 22,
-	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+	attribution: ' | Webmap created by Jimoh Sheriff Oluwagbenga | Credit: HandsonDataViz | <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 	});
 	
 var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
