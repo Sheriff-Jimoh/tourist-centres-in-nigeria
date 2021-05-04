@@ -95,15 +95,15 @@ $(window).on('load', function() {
 	
 var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
-	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: <a href=>HandsonDataViz<a/> | Tiles &copy; Esri, 2012'
+	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: HandsonDataViz with <a href="https://leafletjs.com/">Leaflet</a> | Tiles &copy; Esri, 2012'
 	});
 
 var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
-	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: <a href=>HandsonDataViz<a/> | Tiles &copy; Esri'
+	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> |  Credit: HandsonDataViz with <a href="https://leafletjs.com/">Leaflet</a> | Tiles &copy; Esri'
 	});
 
-var mbAttr = 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: <a href=>HandsonDataViz<a/> | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+var mbAttr = 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: HandsonDataViz with <a href="https://leafletjs.com/">Leaflet</a> | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 	mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
@@ -113,12 +113,12 @@ var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', maxZoom:22, attribu
 
 var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 22,
-	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: <a href=>HandsonDataViz<a/> | <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> |  Credit: HandsonDataViz with <a href="https://leafletjs.com/">Leaflet</a> | <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 	});
 	
 var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 22,
-	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: <a href=>HandsonDataViz<a/> | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	attribution: 'Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> |  Credit: HandsonDataViz with <a href="https://leafletjs.com/">Leaflet</a> | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
 var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
