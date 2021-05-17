@@ -88,11 +88,8 @@ $(window).on('load', function() {
    }
   
     //Changing the map control zoom position
-   //map.zoomControl.setPosition("topright");
+   map.zoomControl.setPosition("topright");
   
-      //Add Scale
-    L.control.scale({position: "bottomright"}).addTo(map)
-	
 var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
 	attribution: ' | Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: HandsonDataViz with <a href="https://leafletjs.com/">Leaflet</a> | Tiles &copy; Esri, 2012'
@@ -145,10 +142,13 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	   
 L.control.layers(baseLayers).addTo(map);
 	
-var ctrlPan = L.control.pan().addTo(map);
+var ctrlPan = L.control.pan({position: "topright"}).addTo(map);
  let polylineMeasure = L.control.polylineMeasure ({position:'topright', unit:'metres', showBearings:true, clearMeasurementsOnStop: false, showClearControl: true, showUnitControl: true})
       polylineMeasure.addTo (map);
+	      //Add Scale
+ L.control.scale({position: "bottomright"}).addTo(map)
 L.control.mousePosition ({position: "bottomright"}).addTo(map);
+	
   //L.control.layers(basemap).addTo(map);
   function initMap(options, chapters) {
     createDocumentSettings(options);
