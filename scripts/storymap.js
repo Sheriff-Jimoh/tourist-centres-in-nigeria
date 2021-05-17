@@ -128,7 +128,9 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	//	layers: [Esri_WorldImagery],
         //fullscreenControl: {
         //pseudoFullscreen: false
-		
+ var ctrlPan = L.control.pan({position: "topright"}).addTo(map);
+ let polylineMeasure = L.control.polylineMeasure ({position:'topright', unit:'metres', showBearings:true, clearMeasurementsOnStop: false, showClearControl: true, showUnitControl: true})
+      polylineMeasure.addTo (map);	
 		
 	var baseLayers = {
 	//"Open Street Map1" : basemap,
@@ -141,10 +143,6 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	};	
 	   
 L.control.layers(baseLayers).addTo(map);
-	
-var ctrlPan = L.control.pan({position: "topright"}).addTo(map);
- let polylineMeasure = L.control.polylineMeasure ({position:'topright', unit:'metres', showBearings:true, clearMeasurementsOnStop: false, showClearControl: true, showUnitControl: true})
-      polylineMeasure.addTo (map);
 	      //Add Scale
  L.control.scale({position: "bottomright"}).addTo(map)
 L.control.mousePosition ({position: "bottomright"}).addTo(map);
