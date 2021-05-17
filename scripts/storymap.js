@@ -146,7 +146,9 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 L.control.layers(baseLayers).addTo(map);
 	
 var ctrlPan = L.control.pan().addTo(map);
-	
+  let polylineMeasure = L.control.polylineMeasure ({position:'topright', unit:'metres', showBearings:true, clearMeasurementsOnStop: false, showClearControl: true, showUnitControl: true})
+      polylineMeasure.addTo (map);
+L.control.mousePosition ({position: "bottomright"}).addTo(map);
   //L.control.layers(basemap).addTo(map);
   function initMap(options, chapters) {
     createDocumentSettings(options);
