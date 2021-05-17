@@ -509,7 +509,7 @@ var ctrlPan = L.control.pan().addTo(map);
     }
 	
     //the minimap tool
-  	var miniMap = new L.Control.MiniMap(OpenStreetMap_Mapnik1, { toggleDisplay: true, position: 'bottomright' }).addTo(map);
+  	var miniMap = new L.Control.MiniMap(OpenStreetMap_Mapnik1, { toggleDisplay: true, position: 'bottomright', minimized: "true" }).addTo(map);
     
     // Add Google Analytics if the ID exists
     var ga = getSetting('_googleAnalytics');
