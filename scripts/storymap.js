@@ -129,8 +129,6 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
         //fullscreenControl: {
         //pseudoFullscreen: false
  var ctrlPan = L.control.pan({position: "topright"}).addTo(map);
- let polylineMeasure = L.control.polylineMeasure ({position:'topright', unit:'metres', showBearings:true, clearMeasurementsOnStop: false, showClearControl: true, showUnitControl: true})
-      polylineMeasure.addTo (map);	
 		
 	var baseLayers = {
 	//"Open Street Map1" : basemap,
@@ -142,10 +140,12 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	"Street Map": streets
 	};	
 	   
-L.control.layers(baseLayers).addTo(map);
+ L.control.layers(baseLayers).addTo(map);
+ let polylineMeasure = L.control.polylineMeasure ({position:'topright', unit:'metres', showBearings:true, clearMeasurementsOnStop: false, showClearControl: true, showUnitControl: true})
+      polylineMeasure.addTo (map);
 	      //Add Scale
  L.control.scale({position: "bottomright"}).addTo(map)
-L.control.mousePosition ({position: "bottomright"}).addTo(map);
+ L.control.mousePosition ({position: "bottomright"}).addTo(map);
 	
   //L.control.layers(basemap).addTo(map);
   function initMap(options, chapters) {
