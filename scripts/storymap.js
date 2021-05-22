@@ -90,9 +90,6 @@ $(window).on('load', function() {
     //Changing the map control zoom position
    map.zoomControl.setPosition("topright");
   
-  //Add custom nav bar
-  L.control.navbar().addTo(map);
-	
 var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
 	attribution: ' | Webmap created by Jimoh Sheriff Oluwagbenga | Github Repo: <a href="https://github.com/Sheriff-Jimoh/tourist-centres-in-nigeria">Sheriff-Jimoh</a> | Credit: HandsonDataViz with <a href="https://leafletjs.com/">Leaflet</a> | Tiles &copy; Esri, 2012'
@@ -132,7 +129,10 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
         //fullscreenControl: {
         //pseudoFullscreen: false
  var ctrlPan = L.control.pan({position: "topright"}).addTo(map);
-		
+	
+  //Add custom nav bar
+ L.control.navbar({position: "topright"}).addTo(map);		
+	
 	var baseLayers = {
 	//"Open Street Map1" : basemap,
 	"Esri World Street Map": Esri_WorldStreetMap,
