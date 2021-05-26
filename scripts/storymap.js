@@ -76,7 +76,13 @@ $(window).on('load', function() {
     if (!s || s.trim() === '') { return def; }
     return s;
   }
-
+	
+   //Changing the map control zoom position
+ map.zoomControl.setPosition("topright");
+ var ctrlPan = L.control.pan({position: "topright"}).addTo(map);
+	
+  //Add custom nav bar
+ L.control.navbar({position: "topright"}).addTo(map);	
   /**
    * Loads the basemap and adds it to the map
    */
@@ -86,9 +92,6 @@ $(window).on('load', function() {
      maxZoom: 21
    }).addTo(map);
    }
-  
-    //Changing the map control zoom position
-   map.zoomControl.setPosition("topright");
   
 var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 22,
@@ -128,10 +131,6 @@ var OpenStreetMap_Mapnik1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/
 	//	layers: [Esri_WorldImagery],
         //fullscreenControl: {
         //pseudoFullscreen: false
- var ctrlPan = L.control.pan({position: "topright"}).addTo(map);
-	
-  //Add custom nav bar
- L.control.navbar({position: "topright"}).addTo(map);		
 	
 	var baseLayers = {
 	//"Open Street Map1" : basemap,
